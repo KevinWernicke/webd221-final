@@ -1,0 +1,210 @@
+@media (max-width: 1100px) {
+	header {
+	  padding: 0 2%;
+
+	  h2 {
+	    .column(3.5);
+	  }
+
+	  ul {
+	    .column(8.5);
+	    padding-left: 12%;
+	  }  
+	}
+}
+
+@media (max-width: 940px) {
+	//GLOBAL
+	//-----------------------
+	.content-block, 
+	.content-block-about  {
+  	  .column(6);
+  	  padding: 30px 1%;
+	}
+
+	header {
+
+	  h2 {
+	    .column(1.5);
+	  }
+
+	  ul {
+	    .column(10.5);
+	    padding-left: 15%;
+	  }  
+	}
+
+	//HOME
+	//-----------------------
+	.content-block-2 {
+		.column(6);
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	//ABOUT
+	//-----------------------
+	.content-block-about {
+
+	  img {
+	  	width: 50%;
+	  }
+	}	
+
+	//CONTACT
+	//-----------------------
+	#map-canvas {
+		.column(11);
+		height: 220px;
+		margin: 44px 5%;
+	}
+
+	#contact-info {
+		.column(12);
+		margin: 4px 5% 30px 5%;
+	}
+
+	form {
+		margin-left: 0px;
+
+		input[type=text] {
+			width: 47.1%;
+		}
+
+		#submitBtn {
+			margin: 0 40%;
+		}	
+	}	
+}
+
+@media (max-width: 767px) {
+	//GLOBAL
+	//-----------------------
+	nav {
+		
+		.fa-bars {
+			margin-left: 90%;
+	    	display: block;
+	    	padding: 0 15px;
+	    	cursor: pointer;
+		}
+
+		ul.dropdown {
+			display: none;
+			text-align: center;
+
+			li {
+				display: block;
+				padding: 30px 0 0 0;
+			}
+
+			a {
+				&:hover {
+					color: #444;
+				}
+			}
+
+			&.open {
+				display: block;
+			}
+		}
+	}
+
+	//HOME
+	//-----------------------
+	.image-text {
+  		.column(12);
+  		left: 0%;
+
+  		.span1 {
+	    	padding: 10px 10px;
+	    }  
+  	}
+
+	#heroInfo {
+		padding: 22px 5%;
+
+		h2 {
+			font-size: 18px;
+			line-height: 30px;
+
+			span {
+				font-size: 20px;	
+			}	
+		}
+	}
+
+	#heroImage {
+		
+	  .left-arrow {
+	    left: 0;
+	  }
+
+	  .right-arrow {
+	    right: 0;
+	  }
+	}
+
+	//ABOUT
+	//-----------------------
+	.mission-info {
+		.column(12);
+		margin-top: 20px;
+	}
+
+	.mission-image {
+		.column(12);
+		margin-top: 10px;
+
+		img {
+			height: 400px;
+			margin-bottom: 32px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	//GLOBAL
+	//-----------------------
+	.content-block, 
+	.content-block-about  {
+  	  .column(12);
+  	  padding: 30px 5% 20px 5%;
+	}
+
+	//HOME
+	//-----------------------
+	.content-block-2 {
+		.column(12);
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	#heroImage {
+		
+	  .left-arrow {
+		display: none;
+	  }
+
+	  .right-arrow {
+	    display: none;
+	  }
+	}
+	
+	//ABOUT
+	//------------------------
+	.mission-image {
+
+		img {
+			height: 300px;
+		}
+	}
+
+	//CONTACT
+	//-------------------------
+	form {
+		#submitBtn {
+			margin: 0 32%;
+		}	
+	}	
+}	

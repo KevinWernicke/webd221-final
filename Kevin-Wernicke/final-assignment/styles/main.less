@@ -1,0 +1,255 @@
+//---------------------------
+//HOME PAGE STYLES
+//---------------------------
+
+//HOME// HERO IMAGE INFO
+//---------------------------
+#heroInfo {
+	background: @orange;
+	text-align: center;
+	padding: 32px 8%;
+
+	h2 {
+		color: #fff;
+		font-size: 20px;
+		font-family: @regular-font;
+
+		span {
+			font-size: 24px;	
+			font-family: @medium-font;
+			border-bottom: 1px solid #fff;
+		}	
+	}
+}
+
+//HOME// UI BRUSH SECTION
+//---------------------------
+.content-block {
+	margin: 40px 1%;
+	
+	i {
+		font-size: 24px;
+		color: @orange;
+	}
+
+	h3 {
+		padding: 10px 0 15px 0;
+	}
+
+	p {
+		text-align: left;
+	}
+}
+
+//HOME// RECENT PROJECTS SECTION
+//---------------------------
+.content-block-2 {
+	.column(3);
+	margin-top: 30px;
+	margin-bottom: 60px;
+	text-align: right;
+	border: 1px solid #d5d4d3;
+	
+	h4 {
+		color: @orange;
+		margin: 5px 15px 0 0;
+	}
+
+	p {
+		font-size: 12px;
+		color: @font-gray;
+		margin: 0 15px 5px 0;
+	}
+
+	hr {
+		width: 90%;
+		border: 1px solid #d5d4d3;
+	}
+
+	img {
+		cursor: pointer;
+		-webkit-filter: grayscale(100%);
+
+		&:hover {
+			-webkit-filter: none;
+			-webkit-transition: all .5s ease-in-out;
+		}
+
+		&:hover + h4 {
+			color: green;
+			transition: color .5s ease-in-out;
+		}
+	}
+}
+
+//---------------------------
+//ABOUT US PAGE STYLES
+//---------------------------
+
+//ABOUT// CONTENT BLOCK + ITS CONTAINER STYLES
+//---------------------------
+#our_team {
+	background: #f6f6f6;
+	margin-top: 50px;
+	border-top: 1px solid #e5e5e5; 
+	border-bottom: 1px solid #e5e5e5; 
+
+	.section-title-info {
+		text-align: center;
+		padding: 0 5%;
+
+		h1 {
+		  margin: 25px 0 38px 0;
+		    
+		  span {
+		    border-bottom: 2px solid @orange; 
+		  }
+		}
+	}	  
+}
+
+.content-block-about {
+	padding-bottom: 50px;
+
+	h2 {
+		font-size: 18px;
+		padding: 14px 0 5px 0;
+	}	
+
+	h4 {
+		padding-bottom: 15px;
+	}
+
+	img {
+		width: 75%;
+	}
+}
+
+//ABOUT// OUR MISSION SECTION
+//-------------------------------
+.mission-info {
+	.column(6);
+	margin-top: 50px;
+
+	h1 {
+		padding-bottom: 20px;
+
+	    span {
+	      border-bottom: 2px solid @orange; 
+	    }
+	}
+
+	p {
+		padding-bottom: 23px;
+		line-height: 19px;
+	}
+}
+
+.mission-image {
+	.column(6);
+	margin-top: 50px;
+
+	img {
+		height: 300px;
+		margin-bottom: 92px;
+	}
+}
+
+//---------------------------
+//CONTACT PAGE STYLES
+//---------------------------
+
+//CONTACT MAP
+//---------------------------
+#heroImageContact {
+	background: url(../images/contactHeroImage.jpg) fixed;
+	background-size: cover;
+	height: 500px;
+  	width: 100%;
+}
+
+#map-canvas {
+	.column(5.5);
+	height: 520px;
+	margin: 44px 30px 44px 5%;
+}
+
+//CONTACT INFO
+//---------------------------
+#contact-info {
+	.column(5.5);
+	margin: 44px 3% 44px 0;
+
+	h2 {
+		font-size: 20px;
+	}
+}
+
+.contact-data {
+	margin: 15px 0;
+
+	i {
+		.column(0.5);
+		margin: 0;
+		color: @orange;
+		margin-right: 25px; 	
+	}
+
+	h4 {
+		.column(11);
+		line-height: 22px;
+	}
+}
+
+form {
+	margin-left: 40px;
+
+	input[type=text], textarea {
+		font-size: 16px;
+		margin-bottom: 7px;
+		border: 1px solid @paragraph-font-color;
+		border-radius: 3px;
+		
+		&:focus {
+			outline: 0;
+			border-color: @orange;
+    		box-shadow: 0 0 10px @orange;
+		}
+	}
+
+	input[type=text] {
+		height: 50px;
+		width: 329px;
+	}
+
+	textarea {
+		resize: none;
+		overflow: auto;
+		height: 169px;
+		width: 95%;
+		padding-top: 10px;
+	}
+
+	#submitBtn {
+		font-size: 20px;
+		color: #fff;
+		border-radius: 3px;
+		border: none;
+		background: @orange;
+		padding: 12px 35px;
+		cursor: pointer;
+
+		&:focus {
+			outline: 0;
+		}
+
+		&:hover {
+			color: black;
+			transition: color .3s ease-in-out;
+		}
+	}
+
+	::-webkit-input-placeholder {
+   		padding: 0 10px 0;
+	}
+}
